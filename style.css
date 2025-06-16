@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    height: 100vh;
+   background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(images/bg-image.png)center center/cover no-repeat;
+}
+nav{
+    background-color: #3c5b4f;
+    height: 60px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+    padding: 0 25px;
+    background-position: fixed;
+   
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    list-style: none;
+    width: 100%;
+    
+}
+
+.menubar  li{
+    height: 60px;
+    position: relative;
+    
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 1.4em;
+    
+}
+nav li a:hover{
+    background-color: #258862b2;
+    
+}
+
+.logo {
+    margin-right: auto;
+    font-size: 1.4em;
+    user-select: none;
+    
+    
+   
+}
+.logo :hover{
+    background-color: transparent;
+
+
+    
+}
+
+.sidebar{
+    background-color: #3c5b4fc0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    display: none;
+    justify-content: flex-start;
+    flex-direction: column;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    
+}
+
+.sidebar li{
+    width: 100%;
+}
+.sidebar li a{
+    width: 100%;
+    padding-left:25px;
+}
+.menuBtn{
+    display: none;
+    
+}
+@media (max-width:740px) {
+    .hideOnMobile{
+        display: none;
+    }
+   .menuBtn{
+        display: flex;
+    }
+}
+@media (max-width:530px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+.dropdown{
+    /* width: 180px; */
+    color: white;
+    /* padding: 15px 20px; */
+    font-weight: 700;
+    font-size: 0.8em;
+    background-color: #3c5b4f;
+    display: none;
+    flex-direction: column;
+
+}
+.dropdown ul{
+    list-style-type: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+        
+
+}
+.dropdown ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.showDropdown:hover .dropdown{
+    display: flex;
+}
