@@ -76,6 +76,8 @@ nav li a:hover{
     flex-direction: column;
     z-index: 999;
     backdrop-filter: blur(10px);
+        background-attachment: fixed;
+
     
 }
 
